@@ -1,0 +1,12 @@
+DAX measures
+
+1) Total Sales = SUM ( Orders[order_total] )
+2) Total Orders = COUNT ( Orders[order_id] )
+3) Total Customers = DISTINCTCOUNT(Customers[customer_id] )
+4) Average Order Value = DIVIDE ( [Total Sales], [Total Orders], 0 )
+5) On Time Delivery % =
+DIVIDE (
+    [On Time Orders],
+    [Total Orders],
+    0
+)
